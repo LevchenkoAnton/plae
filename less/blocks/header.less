@@ -1,0 +1,81 @@
+.header {
+  background: url("../img/main-bg.jpg") no-repeat center center;
+  background-size: cover;
+
+  &__wrapper {
+    position: relative;
+    max-width: 1280px;
+    margin: 0 auto;
+    color: @header-text-color;
+  }
+
+  &__slider &__slider-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 800px;
+    text-align: center;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 25px;
+    .base-title;
+    line-height: 50px;
+    font-size: 60px;
+  }
+
+  &__description {
+    margin: 0;
+    margin-bottom: 50px;
+    font-size: 20px;
+    font-weight: 300;
+  }
+
+  &__form {
+    display: flex;
+  }
+
+  &__input {
+    padding: 15px 25px;
+    border: none;
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+  }
+
+  &__btn {
+    padding: 10px 25px;
+    .base-title;
+    font-size: 20px;
+    font-weight: 400;
+    color: @header-text-color;
+    border: none;
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+    background: @btn-bg;
+  }
+}
+
+.slick-slider {
+
+  .slick-dots {
+    bottom: 50%;
+    right: 30px;
+    width: auto;
+    transform: rotateZ(90deg);
+  }
+
+  .slick-dots li button {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: @base-bg;
+  }
+
+  .slick-dots .slick-active button {
+    width: 12px;
+    height: 12px;
+    background: @base-bg;
+  }
+}
