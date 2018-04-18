@@ -24,8 +24,9 @@ body {
 }
 .header__wrapper {
   position: relative;
-  max-width: 1280px;
+  max-width: 1300px;
   margin: 0 auto;
+  padding: 0 10px;
   color: #fff;
 }
 .header__slider .header__slider-item {
@@ -33,6 +34,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 800px;
   min-height: 800px;
   text-align: center;
 }
@@ -49,27 +51,6 @@ body {
   margin-bottom: 50px;
   font-size: 20px;
   font-weight: 300;
-}
-.header__form {
-  display: flex;
-}
-.header__input {
-  padding: 15px 25px;
-  border: none;
-  border-bottom-left-radius: 25px;
-  border-top-left-radius: 25px;
-}
-.header__btn {
-  padding: 10px 25px;
-  font-family: 'Nunito', sans-serif;
-  font-weight: 300;
-  font-size: 20px;
-  font-weight: 400;
-  color: #fff;
-  border: none;
-  border-bottom-right-radius: 25px;
-  border-top-right-radius: 25px;
-  background: #20ab50;
 }
 .header .slick-slider {
   padding: 0;
@@ -98,10 +79,33 @@ body {
   top: 30px;
   display: block;
 }
+.registration__form {
+  display: flex;
+  justify-content: center;
+}
+.registration__input {
+  padding: 15px 25px;
+  border: none;
+  border-bottom-left-radius: 25px;
+  border-top-left-radius: 25px;
+}
+.registration__btn {
+  padding: 10px 25px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  font-weight: 400;
+  color: #fff;
+  border: none;
+  border-bottom-right-radius: 25px;
+  border-top-right-radius: 25px;
+  background: #20ab50;
+}
 .about__wrapper {
   display: flex;
-  max-width: 1280px;
+  max-width: 1300px;
   margin: 0 auto;
+  padding: 0 10px;
 }
 .about__text {
   display: flex;
@@ -127,8 +131,9 @@ body {
   width: 100%;
 }
 .reviews__wrapper {
-  max-width: 1280px;
+  max-width: 1300px;
   margin: 0 auto;
+  padding: 0 10px;
 }
 .reviews__item {
   display: flex;
@@ -138,6 +143,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 .reviews__text,
 .reviews__photo {
@@ -146,14 +152,12 @@ body {
 .reviews__title {
   margin-bottom: 60px;
   font-size: 30px;
-  text-align: center;
 }
 .reviews__description {
   position: relative;
   margin-bottom: 40px;
   padding: 45px 10px 25px 10px;
   font-size: 20px;
-  text-align: center;
 }
 .reviews__description:before,
 .reviews__description:after {
@@ -181,9 +185,9 @@ body {
   width: 100%;
 }
 .range__wrapper {
-  max-width: 1280px;
+  max-width: 1300px;
   margin: 0 auto;
-  padding: 55px 0;
+  padding: 55px 10px;
   text-align: center;
 }
 .range__title {
@@ -198,6 +202,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 450px;
   min-height: 450px;
   margin-bottom: 20px;
 }
@@ -232,9 +237,9 @@ body {
   background: #e1e0e1;
 }
 .advantages__wrapper {
-  max-width: 1280px;
+  max-width: 1300px;
   margin: 0 auto;
-  padding-top: 60px;
+  padding: 60px 10px 20px 10px;
   text-align: center;
 }
 .advantages__title {
@@ -251,7 +256,7 @@ body {
   justify-content: space-between;
   align-items: center;
   text-align: left;
-  background: url("../../img/advantages-shoes-img.jpg") no-repeat center center;
+  background: url("../img/advantages-shoes-img.jpg") no-repeat center center;
   background-size: contain;
 }
 .advantages__item {
@@ -288,8 +293,8 @@ body {
 .contact__list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 20px 90px;
+  justify-content: space-around;
+  padding: 20px 70px;
 }
 .contact__item {
   min-width: 200px;
@@ -320,4 +325,30 @@ body {
 .shop-email {
   margin-right: 100px;
   color: #1faa50;
+}
+.footer {
+  background: #f3f3f3;
+}
+.footer__wrapper {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 100px 10px;
+}
+.footer__title {
+  margin-bottom: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+.footer__description {
+  margin-bottom: 40px;
+  font-size: 20px;
+  text-align: center;
+}
+.coppyright {
+  padding: 5px 35px;
+  background: #dcdcdc;
+}
+.coppyright__text {
+  font-weight: 400;
+  color: #fff;
 }
