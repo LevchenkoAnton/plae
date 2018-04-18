@@ -98,11 +98,6 @@ body {
   top: 30px;
   display: block;
 }
-.about {
-  /*  &__img {
-    width: 100%;
-  }*/
-}
 .about__wrapper {
   display: flex;
   max-width: 1280px;
@@ -128,6 +123,9 @@ body {
   margin-bottom: 20px;
   font-size: 16px;
 }
+.about__img {
+  width: 100%;
+}
 .reviews__wrapper {
   max-width: 1280px;
   margin: 0 auto;
@@ -146,12 +144,34 @@ body {
   width: 50%;
 }
 .reviews__title {
+  margin-bottom: 60px;
   font-size: 30px;
   text-align: center;
 }
 .reviews__description {
+  position: relative;
+  margin-bottom: 40px;
+  padding: 45px 10px 25px 10px;
   font-size: 20px;
   text-align: center;
+}
+.reviews__description:before,
+.reviews__description:after {
+  position: absolute;
+  content: '\2033';
+  bottom: 0;
+  right: 0;
+  display: block;
+  width: 30px;
+  height: 30px;
+  font-size: 60px;
+  line-height: 60px;
+  color: #dcdcdc;
+}
+.reviews__description:before {
+  top: 0;
+  left: -10px;
+  transform: rotateZ(180deg);
 }
 .reviews__author {
   font-size: 20px;
@@ -159,4 +179,52 @@ body {
 }
 .reviews__img {
   width: 100%;
+}
+.range__wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 55px 0;
+  text-align: center;
+}
+.range__title {
+  margin-bottom: 25px;
+  font-size: 30px;
+}
+.range__description {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+.range__shoes-photo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 450px;
+  margin-bottom: 20px;
+}
+.range__shoes-name {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+}
+.range .slick-arrow {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #dcdcdc;
+  border-radius: 50%;
+  background: #fff;
+}
+.range .slick-prev {
+  left: 70px;
+}
+.range .slick-next {
+  right: 70px;
+}
+.range .slick-prev:before {
+  content: '\003C';
+  color: #dcdcdc;
+}
+.range .slick-next:before {
+  content: '\003E';
+  color: #dcdcdc;
 }

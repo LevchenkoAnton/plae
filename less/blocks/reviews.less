@@ -21,15 +21,38 @@
     width: 50%;
   }
 
-
   &__title {
+    margin-bottom: 60px;
     font-size: 30px;
     text-align: center;
   }
 
   &__description {
+    position: relative;
+    margin-bottom: 40px;
+    padding: 45px 10px 25px 10px;
     font-size: 20px;
     text-align: center;
+  }
+
+  &__description:before,
+  &__description:after {
+    position: absolute;
+    content: '\2033';
+    bottom: 0;
+    right: 0;
+    display: block;
+    width: 30px;
+    height: 30px;
+    font-size: 60px;
+    line-height: 60px;
+    color: @quotes-bg;
+  }
+
+  &__description:before {
+    top: 0;
+    left: -10px;
+    transform: rotateZ(180deg);
   }
 
   &__author {

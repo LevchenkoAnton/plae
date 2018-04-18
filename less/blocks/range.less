@@ -1,0 +1,59 @@
+.range {
+
+  &__wrapper {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 55px 0;
+    text-align: center;
+  }
+
+  &__title {
+    margin-bottom: 25px;
+    font-size: 30px;
+  }
+
+  &__description {
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+
+  &__shoes-photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 450px;
+    margin-bottom: 20px;
+  }
+
+  &__shoes-name {
+    .base-title;
+    font-size: 24px;
+  }
+
+  .slick-arrow {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border: 2px solid @quotes-bg;
+    border-radius: 50%;
+    background: @base-bg;
+  }
+
+  .slick-prev {
+    left: 70px;
+  }
+
+  .slick-next {
+    right: 70px;
+  }
+
+  .slick-prev:before {
+    content: '\003C';
+    color: @quotes-bg;
+  }
+
+  .slick-next:before {
+    content: '\003E';
+    color: @quotes-bg;
+  }
+}
