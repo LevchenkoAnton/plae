@@ -48,3 +48,63 @@
     font-size: 16px;
   }
 }
+
+@media (max-width: 1130px) {
+
+  .advantages {
+
+    &__item {
+      padding: 5px;
+    }
+  }
+}
+
+@media (max-width: 980px) {
+
+  .advantages {
+
+    &__item {
+      max-width: 190px;
+    }
+
+    &__item-title,
+    &__item-description {
+      margin: 0;
+      font-size: 14px;
+      line-height: 18px;
+    }
+  }
+}
+
+@media (max-width: 850px) {
+
+  .advantages {
+
+    &__wrapper {
+      padding: 30px 10px;
+    }
+
+    &__title {
+      font-size: 25px;
+    }
+
+    &__description {
+      font-size: 16px;
+    }
+
+    &__shoes {
+      justify-content: space-around;
+      background: transparent;
+    }
+  }
+}
+
+@media (max-width: 420px) {
+
+  .advantages {
+
+    &__item {
+      max-width: none;
+    }
+  }
+}

@@ -409,6 +409,42 @@ body {
   margin: 0;
   font-size: 16px;
 }
+@media (max-width: 1130px) {
+  .advantages__item {
+    padding: 5px;
+  }
+}
+@media (max-width: 980px) {
+  .advantages__item {
+    max-width: 190px;
+  }
+  .advantages__item-title,
+  .advantages__item-description {
+    margin: 0;
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+@media (max-width: 850px) {
+  .advantages__wrapper {
+    padding: 30px 10px;
+  }
+  .advantages__title {
+    font-size: 25px;
+  }
+  .advantages__description {
+    font-size: 16px;
+  }
+  .advantages__shoes {
+    justify-content: space-around;
+    background: transparent;
+  }
+}
+@media (max-width: 420px) {
+  .advantages__item {
+    max-width: none;
+  }
+}
 .contact__wrapper {
   max-width: 1280px;
   margin: 0 auto;
@@ -505,8 +541,12 @@ body {
   text-align: center;
 }
 .coppyright {
-  padding: 5px 35px;
   background: #dcdcdc;
+}
+.coppyright__wrapper {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 5px 35px;
 }
 .coppyright__text {
   font-weight: 400;
