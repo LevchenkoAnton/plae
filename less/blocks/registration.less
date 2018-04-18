@@ -13,7 +13,6 @@
   }
 
   &__btn {
-    padding: 10px 25px;
     .base-title;
     font-size: 20px;
     font-weight: 400;
@@ -22,5 +21,19 @@
     border-bottom-right-radius: 25px;
     border-top-right-radius: 25px;
     background: @btn-bg;
+  }
+}
+
+@media (max-width: 668px) {
+
+  .registration {
+
+    &__input {
+      padding: 8px 12px;
+    }
+
+    &__btn {
+      font-size: 16px;
+    }
   }
 }

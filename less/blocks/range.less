@@ -23,16 +23,23 @@
     align-items: center;
     height: 450px;
     min-height: 450px;
-    margin-bottom: 20px;
+  }
+
+  &__img {
+    width: 100%;
+    max-width: 465px;
   }
 
   &__shoes-name {
+    margin: 0;
+    margin-bottom: 20px;
     .base-title;
     font-size: 24px;
   }
 
   .slick-arrow {
     display: block;
+    z-index: 1;
     width: 40px;
     height: 40px;
     border: 2px solid @quotes-bg;
@@ -56,5 +63,49 @@
   .slick-next:before {
     content: '\003E';
     color: @quotes-bg;
+  }
+}
+
+@media (max-width: 850px) {
+
+  .range {
+
+    &__wrapper {
+      padding: 30px 10px;
+    }
+
+    &__title {
+      font-size: 25px;
+      margin-bottom: 0;
+    }
+
+    &__description {
+      font-size: 16px;
+      margin-bottom: 0;
+    }
+
+    &__shoes-name {
+      margin-bottom: 10px;
+    }
+
+    .slick-prev {
+      left: 10px;
+    }
+
+    .slick-next {
+      right: 10px;
+    }
+  }
+}
+
+@media (max-width: 580px) {
+
+  .range {
+
+    .slick-prev,
+    .slick-next {
+      top: auto;
+      bottom: 15px;
+    }
   }
 }
