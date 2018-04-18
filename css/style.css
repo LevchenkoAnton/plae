@@ -228,3 +228,96 @@ body {
   content: '\003E';
   color: #dcdcdc;
 }
+.advantages {
+  background: #e1e0e1;
+}
+.advantages__wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-top: 60px;
+  text-align: center;
+}
+.advantages__title {
+  margin-bottom: 15px;
+  font-size: 30px;
+}
+.advantages__description {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+.advantages__shoes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+  background: url("../../img/advantages-shoes-img.jpg") no-repeat center center;
+  background-size: contain;
+}
+.advantages__item {
+  max-width: 235px;
+  margin-bottom: 10px;
+  padding: 14px;
+  border-radius: 10px;
+  background: #fff;
+}
+.advantages__item-title {
+  margin: 0;
+  margin-bottom: 5px;
+  font-weight: 400;
+  font-size: 16px;
+}
+.advantages__item-description {
+  margin: 0;
+  font-size: 16px;
+}
+.contact__wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 60px 0;
+  text-align: center;
+}
+.contact__title {
+  margin-bottom: 15px;
+  font-size: 30px;
+}
+.contact__description {
+  margin-bottom: 45px;
+  font-size: 20px;
+}
+.contact__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px 90px;
+}
+.contact__item {
+  min-width: 200px;
+  margin-bottom: 50px;
+  font-size: 15px;
+  text-align: left;
+}
+.shop-name {
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+}
+.shop-info {
+  margin: 0;
+  margin-bottom: 5px;
+}
+.shop-link {
+  font-weight: 400;
+  color: #1faa50;
+  text-decoration: none;
+}
+.shop-email,
+.shop-phone {
+  font-weight: 400;
+  text-decoration: none;
+  font-size: 18px;
+}
+.shop-email {
+  margin-right: 100px;
+  color: #1faa50;
+}
