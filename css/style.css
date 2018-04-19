@@ -22,7 +22,7 @@ body {
   color: #000;
 }
 .header {
-  background: url("../img/main-bg.jpg") no-repeat center center;
+  background: #e1e0e1 url("../img/main-bg.jpg") no-repeat center center;
   background-size: cover;
 }
 .header__wrapper {
@@ -138,7 +138,12 @@ body {
   border-bottom-left-radius: 25px;
   border-top-left-radius: 25px;
 }
+.registration__input::-webkit-input-placeholder,
+.registration__input::-ms-input-placeholder {
+  color: #8c8c8c;
+}
 .registration__btn {
+  padding: 0 25px;
   font-family: 'Nunito', sans-serif;
   font-weight: 300;
   font-size: 20px;

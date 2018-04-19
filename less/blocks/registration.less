@@ -12,7 +12,13 @@
     border-top-left-radius: 25px;
   }
 
+  &__input::-webkit-input-placeholder,
+  &__input::-ms-input-placeholder {
+    color: @placeholder-text-color;
+  }
+
   &__btn {
+    padding: 0 25px;
     .base-title;
     font-size: 20px;
     font-weight: 400;
